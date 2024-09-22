@@ -1,7 +1,6 @@
 import prompt
-from brain_games.cli import welcome_user
-from brain_games.constants import AMOUNT_OF_ROUNDS
-
+from cli import welcome_user
+from constants import AMOUNT_OF_ROUNDS
 
 def run_start_to_end(game):
     name = welcome_user()

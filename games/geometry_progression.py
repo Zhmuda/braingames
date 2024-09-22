@@ -1,21 +1,11 @@
 import random
-from constants import (
-    MIN_RANDOM_NUMBER,
-    MAX_RANDOM_NUMBER,
-    MAX_PROGRESSION_LENGTH
-)
+from constants import MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER, MAX_PROGRESSION_LENGTH
 
 GAME_QUEST = 'What number is missing in the geometric progression?'
 
-
 # Генерируем вопрос и ответ для geometric progression
 def question_and_answer():
-    """Brain-geometric-progression
-
-    Цель игры: определить число, которое заменено в геометрической
-    прогрессии двумя точками.
-
-    """
+    """Brain-geometric-progression"""
     start_number = random.randint(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER)
     ratio = random.randint(2, MAX_RANDOM_NUMBER)  # Множитель для геометрической прогрессии
     progression_length = random.randint(5, MAX_PROGRESSION_LENGTH)
@@ -28,7 +18,6 @@ def question_and_answer():
 
     question = ' '.join(str(num) for num in sequence)
     return question, answer
-
 
 # Создаем геометрическую прогрессию
 def make_geometric_progression(start, ratio, length):
