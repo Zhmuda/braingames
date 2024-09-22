@@ -1,8 +1,8 @@
 from games import nok
 import app
 
-def main():
+def nok_runner():
     app.run_start_to_end(nok)
 
 if __name__ == '__main__':
-    main()
+    nok_runner()
