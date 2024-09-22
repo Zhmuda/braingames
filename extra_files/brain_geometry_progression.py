@@ -1,8 +1,8 @@
 from games import geometry_progression
-from extra_files.brain_game_launcher import launch_game
+import app
 
 def main():
-    launch_game(geometry_progression)
+    app.run_start_to_end(geometry_progression)
 
 if __name__ == '__main__':
     main()
