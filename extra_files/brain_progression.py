@@ -1,9 +1,9 @@
-import games.nok
+import games.progression
 import engine
 
 
 def main():
-    game = games.nok
+    game = games.progression
     engine.run_start_to_end(game)
 
 
