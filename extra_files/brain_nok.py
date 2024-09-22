@@ -1,5 +1,5 @@
 import games.nok
-import app
+import engine
 
 
 def main():

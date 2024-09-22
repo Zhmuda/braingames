@@ -1,5 +1,5 @@
 import games.geometry_progression
-import app
+import engine
 
 
 def main():
